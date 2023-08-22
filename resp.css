@@ -1,0 +1,94 @@
+@media only screen and (max-width: 746px) {
+    #hero{
+        padding-top: 10vmax;
+    }
+    .heading h1{
+        font-size: 13vw;
+    }
+    .subHeading{
+            padding: 150px 35px;
+    }
+    .subHeading{
+        font-size: 5vw;
+    }
+    .project{
+        width: 100%;
+    }
+    .text{
+        font-size: 2vw;
+    }
+    .someText{
+        font-size: 2vw;
+    }
+    .footer{
+        font-size: 2vw;
+    }
+}
+@media only screen and (max-width: 579px){
+    .heading h1{
+        font-size: 15vw;
+    }
+    .heading{
+        padding-right: 5vmax;
+    }
+    .heading .endHeading{
+        padding-left: 10vw;
+    }
+    .subHeading{
+        padding: 200px 35px;
+    }
+    .footer{
+        padding-right: 15px;
+    }
+    .nav-links a{
+        display: none;
+    }
+}
+@media only screen and (max-width: 509px){
+    .heading h1{
+        font-size: 16vw;
+    }
+    .circles{
+        display: none;
+    }
+    .heading .endHeading{
+        padding-left: 5vw;
+    }
+    .subHeading{
+        padding: 200px 35px;
+    }
+
+}
+@media only screen and (max-width: 450px){
+    .heroFooter{
+        font-size: 2vw;
+        bottom: 10vh;
+        align-items: center;
+    }
+    .heading h1{
+        font-size: 17vw;
+    }
+    .projects{
+        margin-top: 50px;
+        padding-left: 10px;
+    }
+    .subHeading{
+        padding: 150px 35px;
+    }
+    #hero{
+        height: 100vh;
+    }
+}
+@media only screen and (max-width: 400px){
+    .heading .endHeading{
+        padding-left: 0vw;
+    }
+    .heroFooter{
+        flex-direction: column;
+        text-align: center;
+    }
+    .heroFooter h3{
+        font-size: 4.5vw;
+        justify-content: center;
+    }
+}

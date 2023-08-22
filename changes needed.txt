@@ -1,0 +1,4 @@
+
+About -> Projects
+Learning how to scrollIntoView & trying it by using id
+Timeline

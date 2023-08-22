@@ -1,0 +1,380 @@
+@import url('https://fonts.cdnfonts.com/css/general-sans');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'General Sans';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.main {
+    width: 100%;
+    background-color: black;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: relative;
+    background-color: black;
+}
+
+.nav {
+    padding: 30px 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    z-index: 99999;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    color: white;
+}
+
+.nav-links{
+    display: flex;
+    gap: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    transform: translateY(-300%);
+}
+.heading {
+    padding: 10vw 4vw;
+    width: 100%;
+}
+
+.heading h1 {
+    opacity: .7;
+    font-size: 10vw;
+    letter-spacing: 2px;
+    font-family: 'General Sans';
+    font-weight: bolder;
+    line-height: 1;
+    text-transform: uppercase;
+    padding-left: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.heading .endHeading {
+    padding-left: 10vw;
+    width: fit-content;
+}
+
+.heading .endHeading h5 {
+    text-transform: uppercase;
+    float: right;
+}
+
+.subHeading {
+    padding: 0px 35px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.subHeading h5 {
+    line-height: 30px;
+}
+
+.heroFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    padding: 10px 30px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.heroFooter h3 a {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    color: white;
+    text-decoration: none;
+}
+
+.circle {
+    height: 25px;
+    width: 25px;
+    background-color: #b3b3b3;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0px 2px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circles {
+    display: flex;
+}
+
+
+/* Timeline page*/
+.timeline-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : #b3b3b3;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.timeline-page h1{
+    font-size: 3vw;
+}
+.timeline-container{
+    height: 80vh;
+    width: 80vw;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timeline-page .line{
+    border: 2px solid black;
+    height: 75vh;
+    width: 15px;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    top: 2%;
+}
+.filling-line{
+    width: 100%;
+    background-color: black;
+    height: 0%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.timeline{
+    width: 70vw;
+    margin:0px 0px;
+    display:flex;
+    align-items: center;
+    gap: 30px;
+    z-index: 1;
+    position: relative;
+}
+.timeline h4{
+    font-weight: 900;
+}
+.timeline-circle{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-18%);
+}
+.timeline-content{
+    width: 40%;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 15px;
+}
+.timeline-right{
+   flex-direction: row-reverse;
+}
+
+
+
+/* Project page  */
+.projects {
+    width: 100%;
+    color: white;
+    padding: 80px 25px;
+    margin-top: 150px;
+}
+.project-heading{
+    padding: 20px 0px;
+    text-align: center;
+}
+.project {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+    justify-content: space-between;
+    padding: 35px 10px;
+    position: relative;
+}
+
+.project h1 {
+    opacity: 0.6;
+    font-size: 4.5vw;
+    transition: all 0.4s ease;
+}
+
+.last-project {
+    border-bottom: 1px solid black;
+}
+
+.project-img img{
+    height: 300px;
+    filter: blur(2px);
+}
+.project-img{
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%,0%);
+    box-shadow: 2px 2px 2px  grey;
+    z-index: 1000;
+}
+.project-img a{
+    position: absolute;
+    z-index: 100000;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,50%);
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 20px 50px;
+    color: black;
+}
+
+/* About section */
+ 
+.about {
+    width: 100%;
+    color: white;
+    padding: 100px 0px 0px 50px;
+    margin-top: 200px;
+    height: 100vh;
+}
+
+.subAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.subAbout .image {
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(./pp\ vin.jpeg);
+    background-size: cover;
+    border: 2px solid #B3B3B3;
+    box-shadow: 0px 0px 10px #B3B3B3;
+}
+
+.text {
+    width: 40%;
+    font-size: 1.15vw;
+    margin-left: 50px;
+}
+
+.text h4 {
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+
+.text p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.text a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 100px;
+}
+
+.someText {
+    padding: 50px 0px;
+    font-size: 1.1vw;
+    display: inline-flex;
+    flex-direction: column;
+}
+.someText a{
+    color: white;
+    text-decoration: none;
+}
+
+.lessOpacity {
+    opacity: 0.6;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 10px 20px;
+    padding-right: 50px;
+    font-size: 1vw;
+}
+
+.footer .time {
+    display: flex;
+    gap: 20px;
+    color: black;
+}
+
+.footer .socialmedia {
+    display: flex;
+    gap: 20px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    color: black;
+}
+
+.bounding {
+    overflow: hidden;
+}
+
+.bounding-elem {
+    transform: translateY(115%);
+}
+
+.nav-bound {
+    transform: translateY(-300%);
+}
+
+.nav-anchor {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.hover-anim {
+    content: "";
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    height: 1px;
+    bottom: 0px;
+    width: 100%;
+    transform: translateX(-100%);
+}
