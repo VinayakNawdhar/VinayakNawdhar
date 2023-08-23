@@ -1,4 +1,3 @@
-
 About -> Projects
 Learning how to scrollIntoView & trying it by using id
-Timeline
+Changing the text in about section, somethings are unapropriate
