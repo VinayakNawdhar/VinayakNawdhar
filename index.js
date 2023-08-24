@@ -373,3 +373,21 @@ if (window.innerWidth > 590) {
     height: "100%",
   });
 }
+
+document.querySelector('.full-stack').addEventListener('click',function(e){
+  console.log('click');
+  e.preventDefault();
+  gsap.to('.modal-window',{
+    opacity : 1,
+    top : '0%',
+    duration : 1,
+    ease :  Expo.easeInOut
+  })
+})
+document.querySelector('.modal-window').addEventListener('click',function(){
+  gsap.to('.modal-window',{
+    top : '-100%',
+    duration : 1,
+    ease : Power3
+  })
+})

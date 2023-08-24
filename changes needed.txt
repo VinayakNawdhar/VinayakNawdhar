@@ -1,3 +1,4 @@
 About -> Projects
 Learning how to scrollIntoView & trying it by using id
 Changing the text in about section, somethings are unapropriate
+contact us section to be build after timeline

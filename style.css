@@ -15,6 +15,92 @@ body {
     height: 100%;
     width: 100%;
 }
+/* Modal Window */
+.modal-window{
+    top: 0px;
+    position: absolute;
+    z-index: 100000;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -100%;
+    opacity: 0;
+}
+.modal-container{
+    width: 80%;
+    height: 80%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 100px rgba(112, 104, 104, 0.315);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-container{
+    padding: 10px;
+    width: 55%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.skills{
+    height: 30px;
+    width: 100%;
+    margin: 3px 0px;
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    align-items: center ;
+    font-size: 0.85vw;
+    font-weight: bolder;
+}
+.skill-fill{
+    background-color:#0167e330;
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    left: 0px;
+    z-index: 0;
+}
+.skill-name{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #006dea71;
+    z-index: 1;
+}
+.skill-name img{
+    width: 50px;
+}
+.skill-per{
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    color: white;
+}
+canvas{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+}
+.image-1{
+    width: 45%;
+    mix-blend-mode:hard-light;
+    position: absolute;
+    left: -10%;
+    top: 0%;
+}
+
+
 
 /* top screen */
 .top-screen{
@@ -67,7 +153,7 @@ body {
 
 .main {
     width: 100%;
-    background-color: black;
+    background-color: transparent;
 }
 
 #hero {
@@ -255,6 +341,12 @@ body {
     color: white;
     padding: 80px 25px;
     margin-top: 150px;
+    position: relative;
+}
+.projects>p{
+    position: absolute;
+    top: 15%;
+    right: 13%;
 }
 .project-heading{
     padding: 20px 0px;
@@ -271,7 +363,7 @@ body {
 }
 
 .project h1 {
-    opacity: 0.6;
+    opacity: 0.8;
     font-size: 4.5vw;
     transition: all 0.4s ease;
 }
