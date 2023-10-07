@@ -1,7 +1,8 @@
+let locoScroll;
 function loco() {
   gsap.registerPlugin(ScrollTrigger);
 
-  const locoScroll = new LocomotiveScroll({
+  locoScroll = new LocomotiveScroll({
     el: document.querySelector(".main"),
     smooth: true,
   });
@@ -118,7 +119,7 @@ if (window.innerWidth > 590) {
     scrollTrigger: {
       trigger: ".nawdhar",
       scroller: ".main",
-      scrub: 2,
+      scrub: true,
       start: "top 40%",
       end: "top 10%",
     },
@@ -143,7 +144,7 @@ if (window.innerWidth > 590) {
     scrollTrigger: {
       trigger: ".heroFooter",
       scroller: ".main",
-      scrub: 2,
+      scrub: true,
       start: "top 70%",
       end: "top 0%",
     },
@@ -270,7 +271,7 @@ if (window.innerWidth > 590) {
       scroller: ".main",
       start: "top 80%",
       end: "top 20%",
-      scrub: 2,
+      scrub: true,
     },
   });
   aboutTimeline
@@ -301,7 +302,7 @@ if (window.innerWidth > 590) {
       trigger: ".timeline-page",
       start: "top 100%",
       end: "top 0%",
-      scrub: 2,
+      scrub: true,
     },
   });
   tl3
@@ -366,7 +367,7 @@ if (window.innerWidth > 590) {
       start: "top 60%",
       end: "top 0%",
       ease: "Power1",
-      scrub: 2,
+      scrub: true,
     },
   });
   tl4.to(".filling-line", {
@@ -390,4 +391,10 @@ document.querySelector('.modal-window').addEventListener('click',function(){
     duration : 1,
     ease : Power3
   })
+})
+
+
+
+document.querySelector('#project-btn').addEventListener('click',function(e){
+  locoScroll.scrollTo(document.getElementById('projects'));
 })

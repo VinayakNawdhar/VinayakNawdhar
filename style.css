@@ -9,7 +9,10 @@
     box-sizing: border-box;
     font-family: 'General Sans';
 }
-
+*::selection{
+    color: rgb(32, 162, 195);
+    background-color: black;
+}
 html,
 body {
     height: 100%;
