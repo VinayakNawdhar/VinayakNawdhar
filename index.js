@@ -36,71 +36,71 @@ loco();
 
 let topscreentl = gsap.timeline({});
 topscreentl
-  .from("#lowest", {
-    opacity: 0,
-    onStart: function () {
-      $("#lowest").textillate({
-        in: {
-          effect: "fadeInUp",
-          callback: function () {
-            $("#lowest").textillate("out");
-          },
-        },
-        out: { effect: "fadeOutUp" },
-      });
-    },
-    duration: 0.4,
-  })
-  .from("#second-lowest", {
-    opacity: 0,
-    delay: 1,
-    onStart: function () {
-      $("#second-lowest").textillate({
-        in: {
-          effect: "fadeInUp",
-          callback: function () {
-            $("#second-lowest").textillate("out");
-          },
-        },
-        out: { effect: "fadeOutUp" },
-      });
-    },
-    duration: 0.4,
-  })
-  .from("#second-top", {
-    opacity: 0,
-    delay: 0.6,
-    onStart: function () {
-      $("#second-top").textillate({
-        in: {
-          effect: "fadeInUp",
-          callback: function () {
-            $("#second-top").textillate("out");
-          },
-        },
-        out: { effect: "fadeOutUp" },
-      });
-    },
-    duration: 0.4,
-  })
-  .from("#top", {
-    opacity: 0,
-    delay: 0.7,
-    onStart: function () {
-      $("#top").textillate({
-        in: {
-          effect: "fadeInUp",
-        },
-      });
-    },
-    duration: 0.4,
-  })
-  .to('.top-screen',{
-    delay : 0.9,
-    top : '-100%',
-    ease : Expo.easeInOut,
-    duration : 1.2,
-  })
+  // .from("#lowest", {
+  //   opacity: 0,
+  //   onStart: function () {
+  //     $("#lowest").textillate({
+  //       in: {
+  //         effect: "fadeInUp",
+  //         callback: function () {
+  //           $("#lowest").textillate("out");
+  //         },
+  //       },
+  //       out: { effect: "fadeOutUp" },
+  //     });
+  //   },
+  //   duration: 0.4,
+  // })
+  // .from("#second-lowest", {
+  //   opacity: 0,
+  //   delay: 1,
+  //   onStart: function () {
+  //     $("#second-lowest").textillate({
+  //       in: {
+  //         effect: "fadeInUp",
+  //         callback: function () {
+  //           $("#second-lowest").textillate("out");
+  //         },
+  //       },
+  //       out: { effect: "fadeOutUp" },
+  //     });
+  //   },
+  //   duration: 0.4,
+  // })
+  // .from("#second-top", {
+  //   opacity: 0,
+  //   delay: 0.6,
+  //   onStart: function () {
+  //     $("#second-top").textillate({
+  //       in: {
+  //         effect: "fadeInUp",
+  //         callback: function () {
+  //           $("#second-top").textillate("out");
+  //         },
+  //       },
+  //       out: { effect: "fadeOutUp" },
+  //     });
+  //   },
+  //   duration: 0.4,
+  // })
+  // .from("#top", {
+  //   opacity: 0,
+  //   delay: 0.7,
+  //   onStart: function () {
+  //     $("#top").textillate({
+  //       in: {
+  //         effect: "fadeInUp",
+  //       },
+  //     });
+  //   },
+  //   duration: 0.4,
+  // })
+  // .to('.top-screen',{
+  //   delay : 0.9,
+  //   top : '-100%',
+  //   ease : Expo.easeInOut,
+  //   duration : 1.2,
+  // })
 .to(".bounding-elem", {
   transform: "translateY(0%)",
   duration: 1,

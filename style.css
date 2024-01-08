@@ -1,6 +1,6 @@
 @font-face {
     font-family: General Sans;
-    src: url(./GeneralSans-Regular.otf);
+    src: url(./assets/GeneralSans-Regular.otf);
   }
   
 * {
@@ -119,7 +119,7 @@ canvas{
     background: url('https://images.unsplash.com/photo-1527567018838-584d3468eb85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80') no-repeat;
     background-size: cover;
     background-position:left;
-
+    display: none;
 }
 
 .topscreen-text > h1{
@@ -158,7 +158,13 @@ canvas{
     width: 100%;
     background-color: transparent;
 }
-
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+}
 #hero {
     width: 100%;
     height: 100vh;
@@ -195,13 +201,13 @@ canvas{
 
 .heading h1 {
     opacity: .7;
-    font-size: 10vw;
+    font-size: 8vw;
     letter-spacing: 2px;
     font-family: 'General Sans';
     font-weight: bolder;
     line-height: 1;
     text-transform: uppercase;
-    padding-left: 5vw;
+    padding-left: 7vw;
     display: flex;
     align-items: center;
 }
@@ -332,9 +338,13 @@ canvas{
     padding: 15px;
     border-radius: 15px;
 }
+.timeline-content span::before{
+    content: '*';
+}
 .timeline-right{
    flex-direction: row-reverse;
 }
+
 
 
 
@@ -422,7 +432,7 @@ canvas{
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    background-image: url(./pp\ vin.jpeg);
+    background-image: url(./assets/pp\ vin.jpeg);
     background-size: cover;
     border: 2px solid #B3B3B3;
     box-shadow: 0px 0px 10px #B3B3B3;
